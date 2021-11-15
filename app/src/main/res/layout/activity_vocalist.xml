@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VocaListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbVoca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBB5B5"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <CheckBox
+        android:id="@+id/cbRememberList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tbVoca"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:button="@drawable/custom_checkbox" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/tbVoca"
+        android:layout_toStartOf="@+id/cbRememberList"
+        />
+
+    <LinearLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbVoca"
+        android:orientation="horizontal"
+        android:layout_above="@+id/adView"
+        >
+
+        <GridView
+            android:id="@+id/lstVoca"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3" >
+
+        </GridView>
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_bieu_ngu">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+    <!--   app:adUnitId="ca-app-pub-3940256099942544/6300978111" test-->
+<!--  ads:adUnitId="ca-app-pub-2847353116904733/1208689325"> live-->

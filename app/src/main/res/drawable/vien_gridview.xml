@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="1dip"
+        android:color="#72736B" />
+    <solid
+        android:color="#ffffff" />
+    <!-- gon tron
+    <corners android:radius="8dp"/> -->
+</shape>

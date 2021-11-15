@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FashcardActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbFashcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBB5B5"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txtFCPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tbFashcard"/>
+
+    <!-- cardElevation muc do bong , cardCornerRadius bo tron-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="12dp"
+        app:contentPadding="10dp"
+        android:layout_below="@+id/txtFCPos"
+        android:layout_above="@+id/layout_answer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtFrtKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/purple_500"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/txtFrtHira"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFrtKanji"
+                 android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtFrtMean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFrtHira"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_red_dark"
+                />
+
+            <TextView
+                android:id="@+id/txtFrtEx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFrtMean"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtFrtEx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFrtEx1"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        android:layout_above="@+id/layout_answer"
+        android:layout_below="@+id/txtFCPos"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtBackKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/purple_500"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/txtBackHira"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBackKanji"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtBackMean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/txtBackHira"
+                android:layout_marginTop="30dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/txtBackEx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBackMean"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtBackEx2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBackEx1"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/adView"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnResult1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vien_button"
+            android:textSize="40sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btnResult2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/vien_button"
+            android:textSize="40sp"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/btnResult3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/vien_button"
+            android:textSize="40sp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/ad_bieu_ngu"
+        android:layout_alignParentBottom="true">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+    <!--   app:adUnitId="ca-app-pub-3940256099942544/6300978111" test-->
+    <!--  ads:adUnitId="ca-app-pub-2847353116904733/1208689325"> live-->

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginTop="160dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/cv_lesson1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/finge_card">
+
+                        <ImageView
+                            android:id="@+id/imgN5View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
+                            app:srcCompat="@drawable/n5"
+                            />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="JLPT N5"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cv_lesson2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/finge_card">
+
+                        <ImageView
+                            android:id="@+id/igm_Lesson2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
+                            app:srcCompat="@drawable/lesson_2" />
+
+                    <TextView
+                        android:id="@+id/txt_Lesson2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="JLPT N4"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+                <LinearLayout
+                    android:id="@+id/cv_lesson3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/finge_card">
+
+
+                        <ImageView
+                            android:id="@+id/igmN4View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
+                            app:srcCompat="@drawable/n4" />
+
+                    <TextView
+                        android:id="@+id/txtN4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="JLPT N3"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cv_lesson4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/finge_card">
+
+
+                        <ImageView
+                            android:id="@+id/igmN3View2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
+                            app:srcCompat="@drawable/n2" />
+
+                    <TextView
+                        android:id="@+id/txtN3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="JLPT N2"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <LinearLayout
+                    android:id="@+id/cv_lesson5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/finge_card">
+
+                        <ImageView
+                            android:id="@+id/igmN2View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
+                            app:srcCompat="@drawable/n1" />
+
+                    <TextView
+                        android:id="@+id/txtN2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="JLPT N1"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cv_lesson6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/finge_card">
+
+                        <ImageView
+                            android:id="@+id/igmN1View2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
+                            app:srcCompat="@drawable/share" />
+
+                    <TextView
+                        android:id="@+id/txtN1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Chia sẻ"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_bieu_ngu">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--   app:adUnitId="ca-app-pub-3940256099942544/6300978111" test-->
+    <!--  ads:adUnitId="ca-app-pub-2847353116904733/1208689325"> live-->

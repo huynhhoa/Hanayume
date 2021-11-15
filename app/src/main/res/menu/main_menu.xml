@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:title="Chọn trình độ">
+        <menu>
+            <item
+                android:id="@+id/nav_N5"
+                android:title="JLPT N5">
+            </item>
+            <item
+                android:id="@+id/nav_N4"
+                android:title="JLPT N4">
+            </item>
+            <item android:id="@+id/nav_N3"
+                android:title="JLPT N3">
+            </item>
+            <item android:id="@+id/nav_N2"
+                android:title="JLPT N2">
+            </item>
+            <item android:id="@+id/nav_N1"
+                android:title="JLPT N1">
+            </item>
+        </menu>
+    </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Hỗ trợ">
+            <menu>
+                <item android:id="@+id/nav_share"
+                    android:title="Chia sẻ">
+                </item>
+                <item android:id="@+id/nav_rate"
+                    android:title="Đánh giá">
+                </item>
+            </menu>
+        </item>
+    </group>
+
+</menu>

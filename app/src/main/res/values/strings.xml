@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hanayume</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="ad_pub_mani_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_bieu_ngu">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
+    <!-- <string name="ad_pub_mani_test">ca-app-pub-3940256099942544~3347511713</string> test -->
+    <!-- <string name="ad_pub_mani_test">ca-app-pub-2847353116904733~2421698647</string> LIVE -->
+
+    <!--   <string name="ad_bieu_ngu">ca-app-pub-3940256099942544/6300978111</string> test-->
+    <!--  ads:adUnitId="ca-app-pub-2847353116904733/1208689325"> live-->
+
+
+  <!--  //test ca-app-pub-3940256099942544/1033173712 - test
+    //live ca-app-pub-2847353116904733/8512464276 - live -->

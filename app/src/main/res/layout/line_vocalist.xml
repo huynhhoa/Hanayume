@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/vien_gridview">
+
+    <TextView
+        android:id="@+id/txtKanji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Kanji"
+        android:layout_toEndOf="@+id/cbRemember"
+        android:textColor="#0027FF"
+        android:textSize="27sp" />
+    <CheckBox
+        android:id="@+id/cbRemember"
+        android:button="@drawable/custom_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+    <TextView
+        android:id="@+id/txtTuHan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cbRemember"
+        android:maxLength="7"
+        android:text="Tu Han"
+        android:padding="4dp"
+        android:textSize="20sp"/>
+</RelativeLayout>
